@@ -80,3 +80,11 @@ the following form: YYYY.0M.0D.
 [unreleased]: https://github.com/jrg94/portfolio-project/compare/v2024.08.07...HEAD
 [2024.08.07]: https://github.com/jrg94/portfolio-project/compare/v2024.01.07...v2024.08.07
 [2024.01.07]: https://github.com/jrg94/portfolio-project/releases/tag/v2024.01.07
+
+## [2026.02.06]
+
+### Added
+
+- Designed a PlaylistQueue component
+- Designed a SoccerMatchClock component
+- Designed a WatchList component

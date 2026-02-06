@@ -1,12 +1,10 @@
 # Portfolio Part 1: Component Brainstorming
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
-- **Due Date**: <!-- TODO: fill with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
+- **Name**: Varun Pillai
+- **Dot Number**: pillai.107
+- **Due Date**: 02/06 @ 12:40
 
 ## Assignment Overview
-
-<!-- TODO: read the assignment overview then delete this comment -->
 
 The overall goal of the portfolio project is to have you design and implement
 your own OSU component. There are no limits to what you choose to design and
@@ -28,9 +26,6 @@ detailed feedback, which may help you decide which component to ultimately
 implement.
 
 ## Assignment Checklist
-
-<!-- TODO: browse the checklist then delete this comment -->
-
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
 opening the TODOs window from the sidebar. The icon looks like a tree and will
@@ -52,8 +47,6 @@ to the tree diagram (you may remove this one as well):
 
 ## Assignment Learning Objectives
 
-<!-- TODO: read the assignment learning objectives then delete this comment -->
-
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
 what we're hoping you will learn through this particular aspect of the portfolio
@@ -66,8 +59,6 @@ project. Specifically, students should be able to:
    discipline
 
 ## Assignment Rubric: 10 Points
-
-<!-- TODO: read the assignment rubric then delete this comment -->
 
 Again, to be completely transparent, most of the portfolio project, except the
 final submission, is designed as a formative assessment. Formative assessments
@@ -106,23 +97,17 @@ Below is further rationale/explanation for the rubric items above:
 > brainstorming. Plus it helps us get to know you better! Feel free to share
 > images in this section.
 
-<!-- TODO: briefly talk about your interests then delete this comment.
-Also, protip: you can preview what your response looks like by hitting
-the magnifying glass icon in the upper-right corner or pressing CTRL+K and
-then V. This kind of button combination is called a chord, for whatever
-reason -->
+```
+I am generally interested in music, sports (soccer), movies, and video games. I am in Navy ROTC, so my career goals are relatively shaped by that. Im trying to be a cyber warfare officer, and post navy (5 years post grad), I aim to leave the navy and move to the corporate world. I aim to get a masters degree in something more technical (exactly what that is, im still figuring out) by the time i leave the navy.
+```
 
 ## Assignment
-
-<!-- TODO: read the assignment section then delete this comment -->
 
 As previously stated, you are tasked with brainstorming 3 possible components.
 To aid you in this process, we have provided [some example components][example-components]
 that may help you in your brainstorming. All of these components were made at
 some point by one of your peers, so you should feel confident that you can
 accomplish any of them.
-
-<!-- TODO: browse the list of possible projects then delete this comment -->
 
 There is no requirement that you use any of the components listed above.
 If you want to model something else, go for it! Very common early object
@@ -142,8 +127,6 @@ list-like components that have different ways of manipulating the data. Think
 about different ways you might allow a client to manipulate your component.
 
 ### Example Component
-
-<!-- TODO: review this example component then delete this comment -->
 
 To help you brainstorm a few components, we've provided an example below of a
 component you already know well: NaturalNumber. We highly recommend that you
@@ -211,68 +194,92 @@ will likely refine your design to make your implementation easier to use.
 
 > Please use this section to share your designs.
 
-- Component Design #1: <!-- TODO: give component a name then delete this comment -->
+- Component Design #1: PlaylistQueue
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - The aim of this component is to make a mutable music playlist, allowing for queueing, reordering, and "playing" songs.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
-  - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
-  - **Additional Considerations** (*note*: "I don't know" is an acceptable
-    answer for each of the following questions):
-    - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
-      Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Would this component need any enums or constants (e.g.,
-      `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
-    - Can you implement your secondary methods using your kernel methods?
-      Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+    - void addTrack(String trackID): This would add a song to the end of the up-next list.
+    - String playNext(): This removes and returns the next track to be played.
+    - String peekNext(): This reports the enxt track without removing it from the list
+    - int length(): This reports how many tracks are in the up-next list
 
-- Component Design #2: <!-- TODO: give component a name then delete this comment -->
-  - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
-  - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - boolean isEmpty(): this reports whether length() == 0
+    - void addAll(PlaylistQueue other): this appends all tracjs from other to the end (other will be empty after this)
+    - void skip(int k): this removes the next "k" tracks
+    - void moveNextToEnd(): this takes a song and moves it to the end of the up-next list
+    - void clearAll(): this removes all tracks
+    - boolean contains(String trackId): this reports whether a specific song is in the up-next list
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, as removing and adding songs changes the playlist
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - No, it can be implemented just using string and sequence or queue
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Im not sure
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes. I could implement moveNextToEnd() by using playNext() and addTrack() to cycle it to the end
 
-- Component Design #3: <!-- TODO: give component a name then delete this comment -->
+- Component Design #2: SoccerMatchClock
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - The goal with this one is to model a soccer match clock that tracks the time elapsed, stoppage time, and match state(first half, second half, finished)
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - void tickSeconds(int seconds): this advances the clock by a number of seconds (non-negative)
+    - void setStoppageSeconds(int seconds): sets stoppage time for the current half (also non-negative)
+    - int elapsedSeconds(): this reports total elapsed seconds in the current half
+    - int halfNumber(): this reports 1 or 2 depending on what half of the game we're in
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - void startSecondHalf(): this switches from half 1 to 2
+    - boolean inStoppageTime(): this reports whether relapsed time is beyond normal allotted time
+    - boolean isHalfOver(): this reports whether elapsed time has reached normal alloted AND stoppage
+    - String displayTime(): this returns a string reporting the time ("45:12")
+    - int regulationSeconds(): reports regulation elngth for the current half (45 mins = 2700 sec)
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, as the clock would change over time, as well as halve values changing
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - No, everything can be stored in integers
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes, a constant like HALF_LENGTH_SECONDS = 2700 helps make implementing the other methods much easier. I can do similair things with other aspects.
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - Yes. I could use elapsedSeconds() to implement inStoppageTime()
+
+- Component Design #3: Watchlist
+  - **Description**:
+    - The prupose of this component is to model a watchlist I would have to keep track of the movies and TV shows Ive watched.
+  - **Kernel Methods**:
+    - void addTitle(String title): this addes a movie or tv show to the list
+    - String removeTitle(String title): this removes and reutnrs the title of the show/movie
+    - void setStatus(String title, Status s): this sets the watch status of a title already on the list
+    - Status statusOf(String title): this reports the status of a title
+  - **Secondary Methods**:
+    - boolean contains(String title): this reports whether a certain title is on the list
+    - int size(): this reports the number of titles in the list
+    - int countWithStatus(Status s): this reports the number of titles with a certain status (how many watched, how many still need to be watched)
+    - void markWatched(String title): this directly marks a title as watch
+    - void clearALL(): this removes all titles from the list
+    - String pickNextToWatch(): this picks a title with no status or the not started status and reutns it
+  - **Additional Considerations** (*note*: "I don't know" is an acceptable
+    answer for each of the following questions):
+    - Would this component be mutable? Answer and explain:
+      - Yes, as titles will be added and removed, as well as their status being changed
+    - Would this component rely on any internal classes (e.g., `Map.Pair`)?
+      Answer and explain:
+      - Yes, i could use a map pair for each title and its media type or for each title and its status
+    - Would this component need any enums or constants (e.g.,
+      `Program.Instruction`)? Answer and explain:
+      - Yes to define possible values for Status (they would likely be NOT_STARTED, WATCHING, COMPLETED, and maybe DROPPED)
+    - Can you implement your secondary methods using your kernel methods?
+      Answer, explain, and give at least one example:
+      - Yes, and example would be setStatus() being used to implement markWatched()
 
 ## Post-Assignment
 
@@ -330,11 +337,7 @@ all your work is there before submitting. For future assignments, you will
 just be submitting a link to a pull request. This will be the only time
 you have to submit any PDFs.
 
-<!-- TODO: upload a PDF of this document and the CHANGELOG to Carmen then delete this comment -->
-
 ### Peer Review
-
-<!-- TODO: review the peer review guidelines then delete this comment -->
 
 Following the completion of this assignment, you will be assigned three
 students' component brainstorming assignments for review. Your job during the
