@@ -88,3 +88,15 @@ the following form: YYYY.0M.0D.
 - Designed a PlaylistQueue component
 - Designed a SoccerMatchClock component
 - Designed a WatchList component
+
+
+## [2026.02.26]
+
+### Added
+
+- Designed a proof of concept for PlaylistQueue component
+
+### Updated
+
+- Implemented basic kernel and secondary methods.
+- Implemented a main method that tests aforementioned kernel and secondary methods.
