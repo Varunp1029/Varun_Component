@@ -90,6 +90,37 @@ the following form: YYYY.0M.0D.
 - Designed a WatchList component
 
 
+## [2026.03.10]
+
+### Added
+
+- Designed `PlaylistQueueKernel` interface with minimal core methods
+- Designed `PlaylistQueue` enhanced interface with layered methods
+- Added full method contracts using design-by-contract
+- Created hierarchy diagram showing relationship between `Standard`, kernel interface, and enhanced interface
+
+### Updated
+
+- Refined component design after proof-of-concept to better separate kernel and secondary responsibilities
+- Reduced kernel to only the minimal operations needed
+- Moved convenience methods into enhanced interface to ensure they can be layered on kernel methods
+- Improved clarity and consistency of method specifications for client-side usability
+
+
+## [2026.04.01]
+
+### Added
+
+- Implemented abstract class `PlaylistQueueSecondary`
+- Implemented all enhanced methods using only kernel methods
+- Implemented `toString`, `equals`, and `hashCode` using only kernel methods
+
+### Updated
+
+- Refined component design to clearly separate kernel and enhanced responsibilities
+- Ensured all secondary methods respect kernel method preconditions using assertions
+- Adjusted method logic to avoid direct access to representation
+- Improved contracts and alignment between interfaces and abstract class implementation
 ## [2026.02.26]
 
 ### Added
