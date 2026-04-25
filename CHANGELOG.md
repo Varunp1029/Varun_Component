@@ -121,6 +121,20 @@ the following form: YYYY.0M.0D.
 - Ensured all secondary methods respect kernel method preconditions using assertions
 - Adjusted method logic to avoid direct access to representation
 - Improved contracts and alignment between interfaces and abstract class implementation
+
+## [2026.04.15]
+
+### Added
+
+- Implemented kernel class `PlaylistQueue1L` for the PlaylistQueue component
+- Added constructor, kernel methods, and Standard methods for `PlaylistQueue1L`
+- Added representation invariant (`@convention`) and abstraction function (`@correspondence`) for sequence-based representation
+
+### Updated
+
+- Selected `Sequence<String>` as the kernel representation because it makes adding to the end, removing from the front, and previewing the front simple to implement
+- Clarified that the front of the playlist queue is stored at position `0` in the representation
+
 ## [2026.02.26]
 
 ### Added
@@ -131,3 +145,4 @@ the following form: YYYY.0M.0D.
 
 - Implemented basic kernel and secondary methods.
 - Implemented a main method that tests aforementioned kernel and secondary methods.
+
