@@ -305,18 +305,18 @@ Take some time to fill them out honestly.
 > complete the portfolio project, how much better (or worse) do you think you
 > understand software development and why?
 
-<!-- TODO: discuss -->
+I think it honestly helped me a lot because in class, trypically we either implement or test, and usually not much beyond that. This project took us through the entire process, from brainstorming, providing a proof of concept, all the way to a fully completed and (Hopefully) clean method.
 
 > Also, did the portfolio project surface any gaps in your own knowledge of
 > software development. If so, what are those gaps and how did you address them?
 
-<!-- TODO: discuss -->
+I realized that i didnt have as strong of an understanding of how the different component layers stack and interact with each other as i had thought previously.
 
 > Finally, as a part of completing the portfolio project, to what extent has
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
 
-<!-- TODO: discuss -->
+Im honestly not sure if i enjoy software development (as in i dont know if its what i want to do in CSE), however it exposed to me a level of creativity that i didnt expect to find, which was a pleasant suprise.
 
 > One of the challenges of completing the portfolio project is picking up a lot
 > of skills on your own. Some of these skills are, of course, software skills.
@@ -324,29 +324,30 @@ Take some time to fill them out honestly.
 > this process. Therefore, the first question is what skills did you pick up
 > through this process?
 
-<!-- TODO: discuss -->
+I developed a lot more experience in dealing with interfaces, classes, and abstract classes. However, the biggest skill i picked up (and im definitely still working on) is working with github. I
 
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
 
-<!-- TODO: discuss -->
+-Designed and implemented a java component using kernel, enhanced, and secondary implementation classes.
+-Wrote design-by-contract documentation for java interfaces using a multitude of different clauses to ensure ease of use.
+-Built JUNIT test suites to cover all methods in aforementioned classes
+-Built experience in using version control via Github, building experience in organized devlopment enviornments.
 
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
 
-<!-- TODO: discuss -->
+I think my opinion on software development hasnt changed all that much. I intended on going into a different speciality, and this ultimately reinforced that. While satisfying at certain points, overall i didnt find myself very interested in the building process.
 
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
 
-<!-- TODO: discuss -->
+With me being in NROTC, i want to try and commision as a cyber warfare officer. As for what i can do to continue on my career trajectory, one of the best things i can do is select networking as my major specialty as it likely has the most overlap between OSU CSE and naval cyber warefare. As for mentors, there have been recent graduates (now naval officers) from ohio state who are now either in or have completed cyber warefare training who ive contacted in the past and hope to continue to consult for advice.
 
 ### Changelog
-
-<!-- TODO: update CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -381,8 +382,6 @@ like to accomplish that, you will need to make GitHub releases after each pull
 request merge (or at least tag your commits). This is not required.
 
 ### Submission
-
-<!-- TODO: read the submission instructions then delete this comment -->
 
 Assuming that your project is in a GitHub repo somewhere and your changes are on
 a proof-of-concept branch, then what we'll want you to do is create a pull
