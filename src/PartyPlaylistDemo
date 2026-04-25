@@ -1,0 +1,39 @@
+/**
+ * Example use case showing {@code PlaylistQueue} for a shared party queue.
+ *
+ * @author Varun Pillai
+ *
+ */
+public final class PartyPlaylistDemo {
+
+    /**
+     * Private constructor so this utility class cannot be instantiated.
+     */
+    private PartyPlaylistDemo() {
+    }
+
+    /**
+     * Demonstrates a shared party playlist.
+     *
+     * @param args
+     *            command-line arguments, unused
+     */
+    public static void main(String[] args) {
+        PlaylistQueue partyQueue = new PlaylistQueue1L();
+
+        partyQueue.addTrack("track:First Guest Request");
+        partyQueue.addTrack("track:Second Guest Request");
+        partyQueue.addTrack("track:Third Guest Request");
+
+        System.out.println("Initial party queue: " + partyQueue);
+
+        System.out.println("Now playing: " + partyQueue.playNext());
+        System.out.println("Queue after first song: " + partyQueue);
+
+        partyQueue.moveNextToEnd();
+        System.out.println("After moving next song to end: " + partyQueue);
+
+        System.out.println("Contains third request? "
+                + partyQueue.contains("track:Third Guest Request"));
+    }
+}
