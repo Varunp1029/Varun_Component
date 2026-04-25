@@ -88,8 +88,6 @@ the following form: YYYY.0M.0D.
 - Designed a PlaylistQueue component
 - Designed a SoccerMatchClock component
 - Designed a WatchList component
-<<<<<<< Updated upstream
-=======
 
 
 ## [2026.03.10]
@@ -136,4 +134,15 @@ the following form: YYYY.0M.0D.
 
 - Selected `Sequence<String>` as the kernel representation because it makes adding to the end, removing from the front, and previewing the front simple to implement
 - Clarified that the front of the playlist queue is stored at position `0` in the representation
->>>>>>> Stashed changes
+
+## [2026.02.26]
+
+### Added
+
+- Designed a proof of concept for PlaylistQueue component
+
+### Updated
+
+- Implemented basic kernel and secondary methods.
+- Implemented a main method that tests aforementioned kernel and secondary methods.
+
