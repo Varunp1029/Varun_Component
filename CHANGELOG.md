@@ -89,6 +89,16 @@ the following form: YYYY.0M.0D.
 - Designed a SoccerMatchClock component
 - Designed a WatchList component
 
+## [2026.02.26]
+
+### Added
+
+- Designed a proof of concept for PlaylistQueue component
+
+### Updated
+
+- Implemented basic kernel and secondary methods.
+- Implemented a main method that tests aforementioned kernel and secondary methods.
 
 ## [2026.03.10]
 
@@ -135,14 +145,16 @@ the following form: YYYY.0M.0D.
 - Selected `Sequence<String>` as the kernel representation because it makes adding to the end, removing from the front, and previewing the front simple to implement
 - Clarified that the front of the playlist queue is stored at position `0` in the representation
 
-## [2026.02.26]
+## [2026.04.24]
 
 ### Added
-
-- Designed a proof of concept for PlaylistQueue component
+- Designed JUnit test suite for the  PlaylistQueuecomponent
+- Added kernel tests for `PlaylistQueue1L`
+- Added secondary method tests for `PlaylistQueueSecondary`
+- Added two different use cases for the PlaylistQueue component, `PartyPlaylistDemo` and `WorkoutPlaylistDemo`
+- Added reflection responses
 
 ### Updated
-
-- Implemented basic kernel and secondary methods.
-- Implemented a main method that tests aforementioned kernel and secondary methods.
-
+- Improved final project polish by adding tests, sample clients, and documentation of the development process
+- Verified that the component demonstrates Standard, kernel, secondary, and common Object method behavior
+- Prepared the PlaylistQueue component for final portfolio submission
